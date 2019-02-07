@@ -53,7 +53,7 @@ public class SMSDTest {
             }
 
         } catch (InvalidSmilesException ex) {
-            Logger.getLogger(SMSDTest.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SMSDTest.class.getName()).log(Level.FINEST, null, ex);
         }
     }
 
