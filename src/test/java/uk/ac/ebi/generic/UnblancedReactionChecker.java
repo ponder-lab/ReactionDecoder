@@ -71,7 +71,7 @@ public class UnblancedReactionChecker extends TestUtility {
                         err.println("ERROR in Reading Reaction file " + f + NEW_LINE + ex);
                     }
                 } catch (Exception ex) {
-                    getLogger(UnblancedReactionChecker.class.getName()).log(SEVERE, null, ex);
+                    getLogger(UnblancedReactionChecker.class.getName()).log(Level.FINEST, null, ex);
                 }
             }
         }
@@ -99,7 +99,7 @@ public class UnblancedReactionChecker extends TestUtility {
                 try {
                     out.println("Q=mol " + generic().create(q));
                 } catch (CDKException ex) {
-                    getLogger(ReactionMechanismTool.class.getName()).log(SEVERE, null, ex);
+                    getLogger(ReactionMechanismTool.class.getName()).log(Level.FINEST, null, ex);
                 }
             }
         }
@@ -122,7 +122,7 @@ public class UnblancedReactionChecker extends TestUtility {
                 try {
                     out.println("T=mol " + generic().create(t));
                 } catch (CDKException ex) {
-                    getLogger(ReactionMechanismTool.class.getName()).log(SEVERE, null, ex);
+                    getLogger(ReactionMechanismTool.class.getName()).log(Level.FINEST, null, ex);
                 }
             }
         }
